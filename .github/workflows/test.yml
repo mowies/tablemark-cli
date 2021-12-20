@@ -16,4 +16,5 @@ jobs:
 
       - name: Use tablemark-cli
         run: |
-          npx tablemark-cli@v2.0.0 "test.json"
+          yarn global add tablemark-cli
+          tablemark "test.json"
