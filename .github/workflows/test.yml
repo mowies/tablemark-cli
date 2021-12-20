@@ -1,4 +1,4 @@
-name: reviewdog
+name: Test CLI
 on: [workflow_dispatch]
 jobs:
   test-newlines:
