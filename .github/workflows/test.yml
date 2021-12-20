@@ -3,6 +3,7 @@ on: [workflow_dispatch]
 jobs:
   test-newlines:
     strategy:
+      fail-fast: false
       matrix:
         platform: [windows-latest, ubuntu-latest, macOS-11]
     runs-on: ${{ matrix.platform }}
