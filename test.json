@@ -1,0 +1,12 @@
+[
+  {
+    "test": "Test1",
+    "platform1": "pass",
+    "platform2": "pass"
+  },
+  {
+    "test": "Test2",
+    "platform1": "pass",
+    "platform2": "pass"
+  }
+]

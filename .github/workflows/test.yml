@@ -1,0 +1,19 @@
+name: reviewdog
+on: [workflow_dispatch]
+jobs:
+  test-newlines:
+    strategy:
+      matrix:
+        platform: [windows-latest, ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - name: Check out code.
+        uses: actions/checkout@v2.4.0
+      - name: Set up Node
+        uses: actions/setup-node@v2.4.1
+        with:
+          node-version: 14
+
+      - name: Use tablemark-cli
+        run: |
+          npx tablemark-cli@v2.0.0 "test.json"
