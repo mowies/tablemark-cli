@@ -4,7 +4,7 @@ jobs:
   test-newlines:
     strategy:
       matrix:
-        platform: [windows-latest, ubuntu-latest, macos-latest]
+        platform: [windows-latest, ubuntu-latest, macOS-11]
     runs-on: ${{ matrix.platform }}
     steps:
       - name: Check out code.
